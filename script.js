@@ -1,21 +1,27 @@
 //complete this code
 class Animal {
 
-	makeSound(){
-		
-	}
+	constructor(private _species: string) {}
+
+  get species(): string {
+    return this._species;
+  }
+
+  makeSound(): void {
+    console.log(`The ${this._species} makes a sound`);
+  }
 	
 }
 
 class Dog extends Animal {
-	function purr(){
+	 purr():void{
 		cosole.log('purr')
 	}
 	
 }
 
 class Cat extends Animal {
-function bark(){
+bark():void{
 	consile.log('woof')
 }
 	
@@ -27,6 +33,12 @@ function bark(){
 const myCat = new Cat("Siamese");
 myCat.makeSound(); 
 myCat.purr();
+
+const myDog = new Dog("Golden Retriever");
+myDog.makeSound(); // Output: The Golden Retriever makes a sound
+myDog.bark();
+
+
 // Do not change the code below this line
 window.Animal = Animal;
 window.Dog = Dog;
