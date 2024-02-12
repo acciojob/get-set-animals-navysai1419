@@ -30,12 +30,14 @@ bark():void{
 
 
 
-const myCat = new Cat("Siamese");
-myCat.makeSound(); 
-myCat.purr();
+const myCat = new Cat("Cat");
+console.log(myCat.species); // Output: Cat
+myCat.makeSound(); // Output: The Cat makes a sound
+myCat.purr(); // Output: purr
 
-const myDog = new Dog("Golden Retriever");
-myDog.makeSound(); // Output: The Golden Retriever makes a sound
+const myDog = new Dog("Dog");
+console.log(myDog.species); // Output: Dog
+myDog.makeSound(); // Output: The Dog makes a sound
 myDog.bark();
 
 
